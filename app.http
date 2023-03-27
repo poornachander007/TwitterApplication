@@ -1,0 +1,78 @@
+// GET All Users for Test API (0)
+GET http://localhost:3002/users/
+###
+
+
+// API 1 --- Path: `/register/` --- Method: `POST`
+POST http://localhost:3002/register/ 
+Content-Type: application/json 
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+###
+
+
+// API 2 --- Path: `/login/` --- Method: `POST`
+POST http://localhost:3002/login/ 
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+###
+
+// API 3 --- Path: `/user/tweets/feed/` --- Method: `GET`
+GET http://localhost:3002/user/tweets/feed/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc5ODUyMjAzfQ.jWnq-hEKcQPkTiNTAwgU6fMUTkE5ngmDfacc6g9koik
+### 
+
+// API 4 --- Path: `/user/following/` --- Method: `GET`
+GET http://localhost:3002/user/following/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc5ODUyMjAzfQ.jWnq-hEKcQPkTiNTAwgU6fMUTkE5ngmDfacc6g9koik
+### 
+
+// API 5 --- Path: `/user/followers/` --- Method: `GET`
+GET http://localhost:3002/user/followers/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc5ODUyMjAzfQ.jWnq-hEKcQPkTiNTAwgU6fMUTkE5ngmDfacc6g9koik
+### 
+
+// API 6 --- Path: `/tweets/:tweetId/` --- Method: `GET`
+GET http://localhost:3002/tweets/10/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc5ODUyMjAzfQ.jWnq-hEKcQPkTiNTAwgU6fMUTkE5ngmDfacc6g9koik
+### 
+
+// API 7 --- Path: `/tweets/:tweetId/likes/` --- Method: `GET`
+GET http://localhost:3002/tweets/10/likes/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc5ODUyMjAzfQ.jWnq-hEKcQPkTiNTAwgU6fMUTkE5ngmDfacc6g9koik
+### 
+
+// API 8 --- Path: `/tweets/:tweetId/replies/` --- Method: `GET`
+GET http://localhost:3002/tweets/1/replies/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc5ODUyMjAzfQ.jWnq-hEKcQPkTiNTAwgU6fMUTkE5ngmDfacc6g9koik
+### 
+
+
+// API 9 --- Path: `/user/tweets/` --- Method: `GET`
+GET http://localhost:3002/user/tweets/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc5ODUyMjAzfQ.jWnq-hEKcQPkTiNTAwgU6fMUTkE5ngmDfacc6g9koik
+### 
+
+// API 10 --- Path: `/user/tweets/` --- Method: `POST`
+POST http://localhost:3002/user/tweets/ 
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc5ODUyMjAzfQ.jWnq-hEKcQPkTiNTAwgU6fMUTkE5ngmDfacc6g9koik
+Content-Type: application/json
+
+{
+   "tweet": "The Mornings..."
+}
+###
+
+// API 11 --- Path: `/tweets/:tweetId/` --- Method: `DELETE`
+DELETE http://localhost:3002/tweets/2/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjc5ODUyMjAzfQ.jWnq-hEKcQPkTiNTAwgU6fMUTkE5ngmDfacc6g9koik
+###
